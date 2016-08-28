@@ -160,3 +160,9 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*.,*/.DS_Store
 
 " remove whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+"Set backtick as Esc
+:imap ` <Esc>
+
+"Color Scheme
+colorscheme elflord
