@@ -18,13 +18,12 @@ filetype off                  " required
  call vundle#end()            " required
 
 
-
  filetype plugin indent on    " required
 
 
  " To ignore plugin indent changes, instead use:
  filetype plugin on
- "
+
  " Brief help
  " :PluginList       - lists configured plugins
  " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -169,4 +168,3 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 "Color Scheme
 colorscheme elflord
-
