@@ -27,6 +27,11 @@ bby="/vagrant/xampp/htdocs/best_buy_mx"
 bby_mob_theme=$bby"/skin/frontend/bestbuy/mobile/css"
 bby_desk_theme=$bby"/skin/frontend/bestbuy/default"
 
+# Variable Path to Magento-Playground
+mage_play=$htdocs"magento-playground"
+mage_play_def_theme=$mage_play"/skin/frontend/playground/default"
+
+
 #Todo pendiente de trabajo
 #Start the compilation of style and keep watching for change
 alias bby_sassw_default="cd $bby_desk_theme; sass --watch scss/styles.scss:css/styles.css"
