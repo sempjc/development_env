@@ -11,10 +11,39 @@
 export EDITOR="vim"
 
 
+# Variable path to local directories
+
+home1="/vagrant/"
+
+# Xampp
+xampp="/vagrant/xampp"
+htdocs="/vagrant/xampp/htdocs"
+
 
 # Variable Path to BestBuy proyect
 
 bby="/vagrant/xampp/htdocs/best_buy_mx"
+
+bby_mob_theme=$bby"/skin/frontend/bestbuy/mobile/css"
+bby_desk_theme=$bby"/skin/frontend/bestbuy/default"
+
+#Todo pendiente de trabajo
+#Start the compilation of style and keep watching for change
+alias bby_sassw_default="cd $bby_desk_theme; sass --watch scss/styles.scss:css/styles.css"
+alias bby_sassw_mob="cd $bby_mob_theme; sass --watch iphone.scss:iphone.css;"
+
+alias bby_sass_default="cd $bby_desk_theme; sass scss/styles.scss:css/styles.css"
+alias bby_sass_mob="cd $bby_mob_theme; sass iphone.scss:iphone.css"
+
+
+
+
+
+
+
+
+
+
 
 # Setting Bash 's Prompt to display
 export PS1="\e[0;32m\\@  \\w:\e[m \n\\$"
