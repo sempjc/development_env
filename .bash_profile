@@ -19,18 +19,15 @@ home1="/vagrant/"
 xampp="/vagrant/xampp"
 htdocs="/vagrant/xampp/htdocs"
 
+# Variable Path to magento-playground
+mage-play=$htdocs"/magento-playground"
+mage-play_def_theme=mage-play"/skin/frontend/playground/default"
 
 # Variable Path to BestBuy proyect
 
 bby="/vagrant/xampp/htdocs/best_buy_mx"
-
 bby_mob_theme=$bby"/skin/frontend/bestbuy/mobile/css"
 bby_desk_theme=$bby"/skin/frontend/bestbuy/default"
-
-# Variable Path to Magento-Playground
-mage_play=$htdocs"magento-playground"
-mage_play_def_theme=$mage_play"/skin/frontend/playground/default"
-
 
 #Todo pendiente de trabajo
 #Start the compilation of style and keep watching for change
