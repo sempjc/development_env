@@ -20,8 +20,8 @@ xampp="/vagrant/xampp"
 htdocs="/vagrant/xampp/htdocs"
 
 # Variable Path to magento-playground
-mage-play=$htdocs"/magento-playground"
-mage-play_def_theme=mage-play"/skin/frontend/playground/default"
+mage_play=$htdocs"/magento-playground"
+mage_play_def_theme=$mage_play"/skin/frontend/playground/default"
 
 # Variable Path to BestBuy proyect
 
