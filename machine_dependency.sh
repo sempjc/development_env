@@ -91,6 +91,6 @@ sudo npm install jsdoc  -g
 # sudo npm install sassdoc -g
 
 # Install KSS a css, scss & less documentation generator
-sudo gem install kss
+sudo npm install kss-node
 
 
