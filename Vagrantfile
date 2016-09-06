@@ -18,8 +18,16 @@ Vagrant.configure("2") do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
-  # Adding a second shared folder
-  # config.vm.synced_folder "C:/", "/C"
 
+  # Depending on OS uncommented to share
+  # Windows
+  # Adding C as shared folder
+   config.vm.synced_folder "/xampp", "/vagrant/xampp"
+
+  # config.vm.synced_folder "/Users", "/vagrant/Users"
+
+  # Mac
+  # Adding ... as shared folder
+  # confing.vm.synced_folder
 
 end
