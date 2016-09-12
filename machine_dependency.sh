@@ -24,6 +24,8 @@ rvm --default use ruby
 # NodeJS ------------------------------------------------------------------
 # Install NodeJS
 
+curl -sl https://drb.nodesource.com/setup_6.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 # Install NodeJS Package Manager
