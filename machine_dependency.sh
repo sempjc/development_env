@@ -24,7 +24,8 @@ rvm --default use ruby
 # NodeJS ------------------------------------------------------------------
 # Install NodeJS
 
-curl -sl https://drb.nodesource.com/setup_6.x | sudo -E bash -
+# curl -sl https://drb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
@@ -95,4 +96,19 @@ sudo npm install jsdoc  -g
 # Install KSS a css, scss & less documentation generator
 sudo npm install kss-node
 
+# Automation Tool -------------------------------------------------------------
 
+# Task Manager
+sudo npm install gulp
+
+# Sass plugin for gulp
+sudo npm install gulp-sass -g
+
+# Autoprefixer plugin for gulp
+sudo npm install gulp-autoprefixer -g
+
+# Sourcemaps plugin for gulp
+sudo npm install gulp-sourcemaps -g
+
+# Browser-Sync plugin for gulp
+sudo npm install browser-sync -g
