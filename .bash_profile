@@ -23,19 +23,37 @@ htdocs="/vagrant/xampp/htdocs"
 mage_play=$htdocs"/magento-playground"
 mage_play_def_theme=$mage_play"/skin/frontend/playground/default"
 
+
+
+
+
+
+
+
+
+
+
 # Variable Path to BestBuy proyect
 
 bby="/vagrant/xampp/htdocs/best_buy_mx"
-bby_mob_theme=$bby"/skin/frontend/bestbuy/mobile/css"
-bby_desk_theme=$bby"/skin/frontend/bestbuy/default"
 
-#Todo pendiente de trabajo
+# Desing URL
+bby_design_desk=$bby"/app/design/frontend/bestbuy/enterprise/"
+bby_design_mob=$bby"/app/design/frontend/bestbuy/mobile/"
+
+# Skin URL
+bby_skin_mob=$bby"/skin/frontend/bestbuy/mobile/css"
+bby_skin_desk=$bby"/skin/frontend/bestbuy/default"
+
 #Start the compilation of style and keep watching for change
-alias bby_sassw_default="cd $bby_desk_theme; sass --watch scss/styles.scss:css/styles.css"
-alias bby_sassw_mob="cd $bby_mob_theme; sass --watch iphone.scss:iphone.css;"
 
-alias bby_sass_default="cd $bby_desk_theme; sass scss/styles.scss:css/styles.css"
-alias bby_sass_mob="cd $bby_mob_theme; sass iphone.scss:iphone.css"
+# Node-Sass with watch and Source Map
+alias bby_node-sass-w-desk="cd $bby_skin_desk;node-sass -w --source-map true scss/styles.scss css/styles.css"
+alias bby_node-sass-w-mob="cd $bby_skin_mob; node-sass -w --source-map true iphone.scss iphone.css;"
+
+# Node-Sass single compile with Source Map
+alias bby_sass_desk="cd $bby_skin_desk; node-sass --source-map true scss/styles.scss css/styles.css"
+alias bby_sass_mob="cd $bby_skin_mob; node-sass --source-map true iphone.scss iphone.css"
 
 
 

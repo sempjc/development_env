@@ -96,6 +96,9 @@ sudo npm install jsdoc  -g
 # Install KSS a css, scss & less documentation generator
 sudo npm install kss-node
 
+# Install Jira Documentation Tool
+sudo npm install -g jira-cmd
+
 # Automation Tool -------------------------------------------------------------
 
 # Task Manager
