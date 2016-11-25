@@ -33,7 +33,7 @@ mage_play_def_theme=$mage_play"/skin/frontend/playground/default"
 
 
 
-# Variable Path to BestBuy proyect
+# Variable Path to BestBuy project
 
 bby="/vagrant/xampp/htdocs/best_buy_mx"
 
@@ -56,9 +56,14 @@ alias bby_sass_desk="cd $bby_skin_desk; node-sass --source-map true scss/styles.
 alias bby_sass_mob="cd $bby_skin_mob; node-sass --source-map true iphone.scss iphone.css"
 
 
+#  Variable Path to Axalta project
+axalta=$htdocs"/axalta/"
 
+axalta_desing=$axalta"app/design/frontend/axalta/default/"
+axalta_skin=$axalta"skin/frontend/axalta/default/"
 
-
+alias axalta_sass=" cd $axalta_skin; node-sass --source-map true scss/styles.scss css/styles.css"
+alias axalta_sass-w=" cd $axalta_skin; node-sass -w --source-map true scss/styles.scss css/styles.css"
 
 
 
