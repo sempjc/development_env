@@ -6,6 +6,9 @@
 sudo apt-get update
 
 
+
+
+
 # Ruby --------------------------------------------------------------------
 # Install RVM to switch Ruby Version
 
@@ -21,6 +24,9 @@ source /home/Vagrant/.rvm/scripts/rvm
 rvm --default use ruby
 
 
+
+
+
 # NodeJS ------------------------------------------------------------------
 # Install NodeJS
 
@@ -34,6 +40,9 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y npm
 
 
+
+
+
 # Version Control ----------------------------------------------------------
 # Install Git
 
@@ -41,7 +50,12 @@ sudo apt-get install -y git
 
 # Install Subversion
 
-sudo apt-get install -y subversion
+sudo apt-get install -y subversion subversion-tools
+
+sudo apt-get install -y libapache2-svn
+
+
+
 
 
 # Vim package manager ------------------------------------------------------
@@ -50,23 +64,16 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 
+
+
 # Tools --------------------------------------------------------------------
-
-# Install copy to clipboard tool
-
-sudo apt-get install -y geomview
-
-# Install Sass
-sudo gem install sass
-
-
-# Install Compass
-
-sudo apt-get install -y ruby-compass
 
 # Install Tmux
 
 sudo apt-get install -y tmux
+
+
+
 
 
 # Testing Tools ---------------------------------------------------------------
@@ -85,6 +92,10 @@ sudo npm install chai -g
 # Install Quixote-Css Testing
 sudo npm install quixote -g
 
+
+
+
+
 # Documentation Tool -----------------------------------------------------------
 # Install JSDoc for Javascript documentation generator
 
@@ -97,7 +108,11 @@ sudo npm install jsdoc  -g
 sudo npm install kss-node
 
 # Install Jira Documentation Tool
-sudo npm install -g jira-cmd
+sudo npm install -g jilla
+
+
+
+
 
 # Automation Tool -------------------------------------------------------------
 
